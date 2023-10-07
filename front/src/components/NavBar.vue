@@ -6,12 +6,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Collections</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Stuff</a>
+                            <a class="nav-link" href="#">Equipment</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Latest News</a>
@@ -25,25 +25,11 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-md-0">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search Q">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                     </form>
                 </div>
             </div>
         </nav>
-    <!-- <nav class="nav-container">
-        <div class="nav-mainlinks">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">Collections</router-link>
-            <router-link to="/about">Stuff</router-link>
-            <router-link to="/about">About Us</router-link>
-        </div>
-        <div class="nav-toolslinks">
-            <router-link to="/">Research</router-link>
-            <router-link to="/about">Your Account</router-link>
-            <router-link to="/about">WishList</router-link>
-            <router-link to="/about">Basket</router-link>
-        </div>
-    </nav> -->
 </template>
 
 <script>
@@ -53,6 +39,7 @@ export default {
 </script>
 <style>
 nav{
+    height: 100px;
     background-color: #d9d9d9;
 }
 navbar-nav li:hover > ul.dropdown-menu {

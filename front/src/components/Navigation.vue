@@ -19,7 +19,7 @@
 
 nav {
   padding: 30px;
-  margin : 0px;
+  margin : -5px;
 }
 .nav-container{
     display: flex;

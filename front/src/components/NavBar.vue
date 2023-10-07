@@ -29,6 +29,7 @@ nav {
 .nav-container{
     display: flex;
     position: fixed;
+    z-index: 5;
     width: 100%;
     background-color: #d9d9d9;
 }

@@ -12,9 +12,14 @@
             <router-link to="/about">WishList</router-link>
             <router-link to="/about">Basket</router-link>
         </div>
-        
     </nav>
 </template>
+
+<script>
+export default {
+  name: 'NavBar'
+}
+</script>
 <style>
 
 nav {

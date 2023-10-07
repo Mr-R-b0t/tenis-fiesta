@@ -1,5 +1,5 @@
 <template>
-  <Navigation/>
+  <NavBar/>
   <router-view/>
 </template>
 <script>
@@ -10,7 +10,7 @@ export default {
   name: 'MainView',
   data () {},
   components: {
-    NavBar,
+    NavBar
   }
 }
 </script>

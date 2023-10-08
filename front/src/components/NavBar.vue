@@ -36,13 +36,13 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex w-25" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <ul class="navbar-nav w-25">
-                    <li class="nav-item"><a href="#" class="nav-link">Your Account</a></li>
+                <ul class="navbar-nav d-flex align-items-center flex-row-reverse w-50">
                     <li class="nav-item"><a href="#" class="nav-link">Basket</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Your Account</a></li>
+                    <form class="nav-item d-flex w-50" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Write here.." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </ul>
             </div>
         </div>
@@ -64,11 +64,12 @@ nav{
 
 .navbar .nav-item .dropdown-menu { display: none; }
 .navbar-nav .nav-item:hover  .dropdown-menu { display: flex; flex-direction: column; }
-.navbar-nav .nav-item {padding: 8% 2%;}
+.navbar-nav .nav-item {padding: 6% 2%;}
 .navbar .nav-item .dropdown-menu {
     margin-top: 30px;
     min-height: 100px;
     background-color: #d9d9d9;
     border-bottom: solid 1px #353535;
 }
+.search{height: fit-content;}
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <footer class="fixed-bottom  bg-dark text-white p-4">
+    <footer class="bg-dark text-white p-4">
         <div class="d-flex">
             <div class="w-25">
                 <router-link to="/" class="font-weight-bold footer-title bold text-decoration-none text-white">Home</router-link>

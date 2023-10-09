@@ -1,6 +1,6 @@
 <template>
-    <footer class="bg-dark text-white p-4">
-        <div class="d-flex">
+    <footer class="container-fluid bg-dark text-white p-4">
+        <div class="d-flex padpad">
             <div class="w-25">
                 <router-link to="/" class="font-weight-bold footer-title bold text-decoration-none text-white">Home</router-link>
                 <br> <br> <p class="bold">About us</p>
@@ -16,14 +16,16 @@
                 <p>Clothes</p>
                 <p>Socks & Unders</p>
                 <p>Shoes</p>
-                <p>Headgear</p></div>
+                <p>Headgear</p>
+            </div>
 
             <div class="w-25">
                 <p class="bold">Matériel</p>
                 <p>Raquettes</p>
                 <p>Amortisseurs</p>
                 <p>Bags</p>
-                <p>Tennis balls</p></div>
+                <p>Tennis balls</p>
+            </div>
 
             <div class="w-25">
                 <p class="bold">Tennis latest news</p>
@@ -32,7 +34,8 @@
                 <br><p class="bold">Your account</p>
                 <p>Your details</p>
                 <p>Your WishList</p>
-                <p>Orders</p></div>
+                <p>Orders</p>
+            </div>
         </div>
     </footer>
 </template>
@@ -49,5 +52,8 @@ export default {
 }
 .bold{
     font-weight: bold;
+}
+.padpad{
+    padding:2% 0%;
 }
 </style>

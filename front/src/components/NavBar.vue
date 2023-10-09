@@ -10,35 +10,46 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Collections</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Clothes</a></li>
+                            <li><a class="dropdown-item" href="#">Socks and Unders</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Headgear</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Equipment</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Raquets</a></li>
+                            <li><a class="dropdown-item" href="#">Shock absorder</a></li>
+                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                            <li><a class="dropdown-item" href="#">Tennis balls</a></li>
+
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Latest news</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Tournaments</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">About us</a>
+                        <router-link to="/about" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">About us</router-link>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Our Brand</a></li>
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav d-flex align-items-center flex-row-reverse w-50">
                     <li class="nav-item"><a href="#" class="nav-link">Basket</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Your Account</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Your Account</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Your Details</a></li>
+                            <li><a class="dropdown-item" href="#">WishList</a></li>
+                            <li><a class="dropdown-item" href="#">Recent Orders</a></li>
+                        </ul>
+                    </li>
                     <form class="nav-item d-flex w-50" role="search">
                         <input class="form-control me-2" type="search" placeholder="Write here.." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>

@@ -4,8 +4,12 @@
   </div>
 </template>
 <style>
-img {
+.home{
   position: fixed;
+  top: 100px;
+}
+img {
+  position: inherit;
   z-index:1;
   top:0px;
   left: 0px;

@@ -1,12 +1,17 @@
 <template>
-    <div class="collections">
-      <h1>This is the Collections page</h1>
+    <div class="collection">
+      <div class="header d-flex align-items-center">
+         <h1>This is the collections page</h1>
+      </div>
     </div>
   </template>
 
   <style scoped>
-  .collections{
+  .collection{
     position: relative;
-    top:100px;
+    top:0px;
+  }
+  .header{
+    height: 400px;
   }
   </style>

@@ -1,12 +1,17 @@
 <template>
-    <div class="equip">
-      <h1>This is the Equipment page</h1>
+   <div class="equip">
+      <div class="header d-flex align-items-center">
+         <h1>This is the equipment page</h1>
+      </div>
     </div>
   </template>
 
   <style scoped>
   .equip{
     position: relative;
-    top:100px;
+    top:0px;
+  }
+  .header{
+    height: 400px;
   }
   </style>

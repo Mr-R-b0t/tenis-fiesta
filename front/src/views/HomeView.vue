@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../assets/what_color_are_tennis_balls.jpg">
+    <!-- <img src="../assets/what_color_are_tennis_balls.jpg"> -->
   </div>
 </template>
 <style>

@@ -6,7 +6,7 @@
 
   <style scoped>
   .equip{
-    position: fixed;
+    position: relative;
     top:100px;
   }
   </style>

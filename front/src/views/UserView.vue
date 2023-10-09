@@ -6,7 +6,7 @@
 
   <style scoped>
   .user{
-    position: fixed;
+    position: relative;
     top:100px;
   }
   </style>

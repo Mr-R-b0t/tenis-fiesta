@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 
 const corsOption = {
   credentials: true, //authetication cookies
-  origin: "https://web.toxicsed.fr",
+  origin: "https://prod.toxicsed.fr",
 };
 
 app.use(cookieParser());
@@ -23,12 +23,10 @@ app.get("/", (req, res) => {
   res.json({ message: "welcome" });
 });
 //router
-require("./app/routes/product.route")(app);
-require("./app/routes/user.route")(app);
-require("./app/routes/checkout.route")(app);
-require("./app/routes/order.route")(app);
-require("./app/routes/wishlist.route")(app);
-
+require("./app/routes/product.routes")
+require("./app/routes/users.routes")
+require("./app/routes/checkout.routes")
+require("./app/routes/wishlist.routes")
 const PORT = 8008;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="header">
+    <div class="header bg-white">
         <h1 class="text-center">Our brand</h1>
         <div class="w-75 d-flex flex-wrap">
           <div class="w-50">
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="header">
+      <div class="header bg-white">
         <h1 class="text-center">Our team</h1>
         <p class="">Our team is composed of best programer on the market :</p>
         <ul>
@@ -33,11 +33,11 @@
         </ul>
         <p>Join us on social medias to have access to the next news !</p>
         <div class="fluid">
-        <img src="../assets/instagram.png" alt="Instagram" class="image">
-        <img src="../assets/logo_x.png" alt="Instagram" class="image">
+          <img src="../assets/fb-logo.png" alt="Facebook" class="image">
+          <img src="../assets/instagram.png" alt="Instagram" class="image">
+          <img src="../assets/logo_x.png" alt="X" class="image">
         </div>
       </div>
-
     </div>
   </template>
 

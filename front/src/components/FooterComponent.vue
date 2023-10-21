@@ -1,5 +1,5 @@
 <template>
-    <footer class="container-fluid bg-dark text-white p-4">
+    <footer class="container-fluid background text-white p-4">
         <div class="d-flex padpad">
             <div class="w-25">
                 <router-link to="/" class="font-weight-bold footer-title bold text-decoration-none text-white">Home</router-link>
@@ -7,8 +7,11 @@
                 <p>Our Team</p>
                 <p>Our Brand</p>
                 <br><p class="bold">Follow us</p>
-                <p>Facebook</p>
-                <p>Instagram</p>
+                <div class="fluid">
+                    <img src="../assets/fb-logo.png" alt="Facebook" class="image">
+                    <img src="../assets/instagram.png" alt="Instagram" class="image">
+                    <img src="../assets/logo_x.png" alt="X" class="image">
+                </div>
             </div>
 
             <div class="w-25">
@@ -55,5 +58,15 @@ export default {
 }
 .padpad{
     padding:2% 0%;
+}
+
+.image{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.background{
+  background-color: #353535;
 }
 </style>

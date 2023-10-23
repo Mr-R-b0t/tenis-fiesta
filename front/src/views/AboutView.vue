@@ -45,7 +45,6 @@
 .about{
   position: relative;
   top:0px;
-  padding-top: 140px;
 }
 .header{
   height: 400px;

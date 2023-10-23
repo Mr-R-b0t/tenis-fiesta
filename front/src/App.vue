@@ -1,19 +1,33 @@
 <template>
-  <NavBar/>
-  <router-view/>
-  <FooterComponent/>
+  <div id="app">
+    <template v-if="isHomeView">
+      <HomeView />
+      <FooterComponent/>
+    </template>
+    <template v-else>
+      <NavBar />
+      <router-view />
+      <FooterComponent/>
+    </template>
+  </div>
 </template>
+
 <script>
-// @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
-import FooterComponent from '@/components/FooterComponent.vue'
+import NavBar from './components/NavBar.vue'
+import HomeView from './views/HomeView.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
-  name: 'MainView',
-  data () {},
+  name: 'App',
   components: {
     NavBar,
+    HomeView,
     FooterComponent
+  },
+  computed: {
+    isHomeView () {
+      return this.$route.path === '/'
+    }
   }
 }
 </script>

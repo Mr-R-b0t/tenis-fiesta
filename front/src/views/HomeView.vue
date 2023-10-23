@@ -152,10 +152,12 @@ export default {
     },
     handleScroll () {
       const value = window.scrollY
-      this.ball.style.marginTop = value * -1.5 + 'px'
-      this.raquette.style.marginLeft = value * -1.5 + 'px'
-      this.sac.style.marginRight = value * -1.5 + 'px'
-      this.title.style.marginTop = value * 1.5 + 'px'
+      window.requestAnimationFrame(() => {
+        this.ball.style.marginTop = value * -1.5 + 'px'
+        this.raquette.style.marginLeft = value * -1.5 + 'px'
+        this.sac.style.marginRight = value * -1.5 + 'px'
+        this.title.style.marginTop = value * 1.5 + 'px'
+      })
     }
   }
 }

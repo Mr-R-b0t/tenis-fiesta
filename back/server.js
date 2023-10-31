@@ -1,12 +1,33 @@
-const express = require('express');
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 const app = express();
-const port = 3001;
+const cookieParser = require("cookie-parser");
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+const corsOption = {
+  credentials: true, //authetication cookies
+  origin: "https://prod.toxicsed.fr",
+};
+
+app.use(cookieParser());
+app.use(cors(corsOption));
+
+//models
+const db = require("./app/models");
+db.connex.sync();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", (req, res) => {
+  res.json({ message: "welcome" });
 });
-
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+//router
+require("./app/routes/product.routes")
+require("./app/routes/users.routes")
+require("./app/routes/checkout.routes")
+require("./app/routes/wishlist.routes")
+const PORT = 8008;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
-

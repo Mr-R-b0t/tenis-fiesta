@@ -1,16 +1,16 @@
 <template>
-<div class="collection">
-    <div class="header d-flex align-items-center">
-         <h1>Our Collections</h1>
+  <div class="collection">
+      <div class="header d-flex align-items-center">
+           <h1>Our Collections</h1>
+        </div>
+        <div class="sections">
+          <SectionComponent :header="'Tshirts'" :items="tshirts" />
+          <SectionComponent :header="'Socks'" :items="socks" />
+          <SectionComponent :header="'Shoes'" :items="shoes" />
+          <SectionComponent :header="'Headgear'" :items="headgear" />
       </div>
-      <div class="sections">
-        <SectionComponent :header="'Tshirts'" :items="tshirts" />
-        <SectionComponent :header="'Socks'" :items="socks" />
-        <SectionComponent :header="'Shoes'" :items="shoes" />
-        <SectionComponent :header="'Headgear'" :items="headgear" />
-    </div>
-</div>
-</template>
+  </div>
+  </template>
 
 <script>
 import SectionComponent from '../components/SectionComponent.vue'

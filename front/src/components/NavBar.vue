@@ -10,10 +10,10 @@
                     <li class="nav-item dropdown">
                         <router-link to="/collections" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Collections</router-link>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Clothes</a></li>
-                            <li><a class="dropdown-item" href="#">Socks and Unders</a></li>
-                            <li><a class="dropdown-item" href="#">Shoes</a></li>
-                            <li><a class="dropdown-item" href="#">Headgear</a></li>
+                            <li><a class="dropdown-item" href="/clothes">Clothes</a></li>
+                            <li><a class="dropdown-item" href="/sockUnders">Socks and Unders</a></li>
+                            <li><a class="dropdown-item" href="/shoes">Shoes</a></li>
+                            <li><a class="dropdown-item" href="/headgear">Headgear</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -33,11 +33,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/about" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">About us</router-link>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Our Brand</a></li>
-                            <li><a class="dropdown-item" href="#">Our Team</a></li>
-                        </ul>
+                        <router-link to="/about" class="nav-link" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">About us</router-link>
                     </li>
                 </ul>
                 <ul class="navbar-nav d-flex align-items-center flex-row-reverse w-50">

@@ -7,6 +7,10 @@ import LatestView from '../views/LatestView.vue'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import UserView from '../views/UserView.vue'
+import clothesView from '../views/sousPages/clothesView.vue'
+import headGear from '../views/sousPages/headGear.vue'
+import shoesView from '../views/sousPages/shoesView.vue'
+import sockUnders from '../views/sousPages/sockUnders.vue'
 
 const routes = [
   {
@@ -48,6 +52,26 @@ const routes = [
     path: '/user',
     name: 'user',
     component: UserView
+  },
+  {
+    path: '/clothes',
+    name: 'clothes',
+    component: clothesView
+  },
+  {
+    path: '/headGear',
+    name: 'headGear',
+    component: headGear
+  },
+  {
+    path: '/shoes',
+    name: 'shoes',
+    component: shoesView
+  },
+  {
+    path: '/sockUnders',
+    name: 'sockUnders',
+    component: sockUnders
   }
 ]
 

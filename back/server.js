@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 
 const corsOption = {
   credentials: true, //authetication cookies
-  origin: "https://prod.toxicsed.fr",
+  origin: "http://localhost:8080",
 };
 
 app.use(cookieParser());
@@ -19,7 +19,7 @@ db.connex.sync();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.json({ message: "welcome" });
 });
 //router

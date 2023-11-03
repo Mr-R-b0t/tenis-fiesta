@@ -3,7 +3,7 @@ const userModel = require("../models/users.model");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = db.users;
-//const OP = db.Sequelize.Op
+const OP = db.Sequelize.Op
 const https = require("http");
 
 exports.findAll = (req, res) => {

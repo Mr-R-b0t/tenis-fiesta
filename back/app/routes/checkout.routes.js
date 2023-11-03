@@ -4,5 +4,7 @@ module.exports = app =>{
     router.post("/", checkout.create);
     router.get("/", checkout.findAll);
     router.get("/", checkout.findOne);
-
+    router.put("/:id", checkout.update);
+    router.delete("/:id", checkout.delete);
+    app.use('/api/checkout', router);
 }

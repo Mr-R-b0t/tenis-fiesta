@@ -50,6 +50,14 @@
                             <li><a class="dropdown-item" href="#">Recent Orders</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <router-link to="/login" class="nav-link">Login</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/register" class="nav-link">Register</router-link>
+                    </li>
+                        <li class="nav-item "><span class="nav-link" @click="logout" style="cursor:pointer">Logout</span>
+                    </li>
                     <form class="nav-item d-flex w-50" role="search">
                         <input class="form-control me-2" type="search" placeholder="Write here.." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -62,7 +70,17 @@
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  methods: {
+    /* logout () {
+      UserDataService.getLogout()
+        .then(response => {
+          localStorage.removeItem('token')
+          this.$store.dispatch('user', null)
+          this.$router.push('login')
+        })
+    } */
+  }
 }
 </script>
 <style scoped>

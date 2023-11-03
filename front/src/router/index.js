@@ -4,6 +4,8 @@ import AboutView from '../views/AboutView.vue'
 import EquipView from '../views/EquipView.vue'
 import CollectionView from '../views/CollectionView.vue'
 import LatestView from '../views/LatestView.vue'
+import LoginView from '../views/LoginView.vue'
+import RegisterView from '../views/RegisterView.vue'
 import UserView from '../views/UserView.vue'
 
 const routes = [
@@ -31,6 +33,16 @@ const routes = [
     path: '/latest',
     name: 'latest',
     component: LatestView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: RegisterView
   },
   {
     path: '/user',

@@ -1,6 +1,6 @@
 import axios from 'axios'
 export default axios.create({
-  baseURL: 'https://api.toxicsed.fr/api',
+  baseURL: 'http://localhost:8008/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'

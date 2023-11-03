@@ -69,4 +69,9 @@ export default {
 .background{
   background-color: #353535;
 }
+
+/*footer{
+    position: absolute;
+    bottom: 0px;
+}*/
 </style>

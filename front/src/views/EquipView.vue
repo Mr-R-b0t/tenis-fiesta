@@ -1,17 +1,69 @@
 <template>
-   <div class="equip">
-      <div class="header d-flex align-items-center">
-         <h1>This is the equipment page </h1>
+<div class="collection">
+    <div class="header d-flex align-items-center">
+         <h1>This is the collections page</h1>
       </div>
+      <div class="sections">
+        <SectionComponent :header="'Raquets'" :items="raquets" />
+        <SectionComponent :header="'Shock Absorber'" :items="shock" />
     </div>
-  </template>
+</div>
+</template>
+
+<script>
+import SectionComponent from '../components/SectionComponent.vue'
+
+export default {
+  components: {
+    SectionComponent
+  },
+  data () {
+    return {
+      raquets: [
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/raquets/raquette_jaune.png')
+        },
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/raquets/raquette_noir.jpg')
+        },
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/raquets/raquettes_rose.png')
+        }
+      ],
+      shock: [
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/raquets/raquette_jaune.png')
+        },
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/raquets/raquette_noir.jpg')
+        },
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/raquets/raquettes_rose.png')
+        }
+      ]
+    }
+  }
+}
+</script>
 
   <style scoped>
-  .equip{
+  .collection{
     position: relative;
     top:0px;
   }
   .header{
-    height: 400px;
+    height: 50vh;
   }
   </style>

@@ -4,5 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-vue/dist/bootstrap-vue.js'
+import store from 'vuex'
 import router from './router'
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).use(store).mount('#app')

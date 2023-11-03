@@ -1,7 +1,7 @@
 <template>
 <div class="collection">
     <div class="header d-flex align-items-center">
-         <h1>This is the collections page</h1>
+         <h1> Our Equipments</h1>
       </div>
       <div class="sections">
         <SectionComponent :header="'Raquets'" :items="raquets" />

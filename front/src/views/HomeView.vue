@@ -43,7 +43,7 @@
           <br><br><br>
           <h2 class="title">Last Arrivals</h2>
           <div class="carousel-component">
-            <CarouselComponent :slides="slides" />
+            <router-link to="/equipment" class="links nav-link"><CarouselComponent :slides="slides" /></router-link>
           </div>
         </div>
         <h2 class="title">Three simple steps:</h2>

@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
                 <ul class="navbar-nav d-flex w-50">
                     <li class="nav-item dropdown">
-                        <router-link to="/collections" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Collections</router-link>
+                        <router-link to="/collections" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Collections</router-link>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Clothes</a></li>
                             <li><a class="dropdown-item" href="#">Socks and Unders</a></li>
@@ -17,7 +17,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/equipment" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Equipment</router-link>
+                        <router-link to="/equipment" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Equipment</router-link>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Raquets</a></li>
                             <li><a class="dropdown-item" href="#">Shock absorder</a></li>
@@ -27,13 +27,13 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/latest" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Latest news</router-link>
+                        <router-link to="/latest" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Latest news</router-link>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Tournaments</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/about" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">About us</router-link>
+                        <router-link to="/about" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">About us</router-link>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Our Brand</a></li>
                             <li><a class="dropdown-item" href="#">Our Team</a></li>
@@ -67,20 +67,29 @@ export default {
 </script>
 <style scoped>
 .navbar{
-    min-height: 90px;
+    min-height: 70px;
+    max-height: 70px;
     background-color: #d9d9d9;
     padding: 0% 2%;
     border-bottom: solid 1px #353535;
 }
 
 .navbar .nav-item .dropdown-menu { display: none; }
-.navbar-nav .nav-item:hover  .dropdown-menu { display: flex; flex-direction: column; }
-.navbar-nav .nav-item {padding: 6% 2%;}
+.nav-link:hover{
+  background: #359381;
+  border-radius: 10px;
+  color: #fff;
+}
+.navbar-nav .nav-item:hover  .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-nav .nav-item {padding: 2%;}
 .navbar .nav-item .dropdown-menu {
-    margin-top: 30px;
-    min-height: 100px;
     background-color: #d9d9d9;
     border-bottom: solid 1px #353535;
 }
 .search{height: fit-content;}
+.navbar{
+}
 </style>

@@ -41,45 +41,10 @@
         <div class="limit">
         <div>
           <br><br><br>
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="../assets/equipement/raquets/raquette_noir.jpg" class="d-block w-50 mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block w-50 mx-auto">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="../assets/equipement/balls/lot_balles_premium.jpg" class="d-block w-50 mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block w-50 mx-auto">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/equipement/bags/bag_blanc.jpg" class="d-block w-50 mx-auto" alt="...">
-                <div class="carousel-caption d-none d-md-block w-50 mx-auto">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          <div class="carousel-component">
+            <CarouselComponent :slides="slides" />
           </div>
-          </div>
+        </div>
           <br><br>
           <div class="accordion w-50 mx-auto" id="accordionExample">
           <div class="accordion-item">
@@ -120,37 +85,11 @@
           </div>
         </div>
         <br><br><br>
-        <h2 class="title">Best sellers: <i>SHOES</i></h2>
-        <br>
-          <ProductCard :data="bestSellers" />
-          <!-- <div class="col">
-            <div class="card">
-              <img src="../assets/collections/shoes/chaussure_tennis_bleuvert.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="../assets/collections/shoes/chaussure_tennis_enfant.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="../assets/collections/shoes/chaussure_tennis_rouge.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div> -->
-          <!-- </div> -->
-        <!-- </div> -->
+        <div class="best-sellers">
+          <h2 class="title">Best sellers: <i>SHOES</i></h2>
+          <br>
+            <ProductCard :data="bestSellers" />
+        </div>
       </div>
       </section>
   </Transition>
@@ -158,10 +97,13 @@
 </template>
 <script>
 import ProductCard from '@/components/ProductCard.vue'
+import CarouselComponent from '../components/CarouselComponent.vue'
+
 export default {
   name: 'HomeView',
   components: {
-    ProductCard
+    ProductCard,
+    CarouselComponent
   },
   data () {
     return {
@@ -185,6 +127,26 @@ export default {
           title: 'Chaussure de tennis',
           description: 'Chaussure de tennis pour homme',
           image: require('../assets/collections/shoes/chaussure_tennis_rouge.png')
+        }
+      ],
+      slides: [
+        {
+          title: 'First slide label',
+          description: 'Some representative placeholder content for the first slide.',
+          image: require('../assets/equipement/raquets/raquette_noir.jpg'),
+          interval: 10000
+        },
+        {
+          title: 'First slide label',
+          description: 'Some representative placeholder content for the first slide.',
+          image: require('../assets/equipement/balls/lot_balles_premium.jpg'),
+          interval: 10000
+        },
+        {
+          title: 'First slide label',
+          description: 'Some representative placeholder content for the first slide.',
+          image: require('../assets/equipement/bags/bag_blanc.jpg'),
+          interval: 10000
         }
       ]
     }

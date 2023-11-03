@@ -4,7 +4,8 @@
          <h1>This is the collections page</h1>
       </div>
       <div class="sections">
-        <SectionComponent :header="'Section Header'" :items="items" />
+        <SectionComponent :header="'Section Header'" :items="shoes" />
+        <SectionComponent :header="'Section Header'" :items="tshirts" />
     </div>
 </div>
 </template>
@@ -18,7 +19,7 @@ export default {
   },
   data () {
     return {
-      items: [
+      shoes: [
         {
           title: 'Chaussure de tennis',
           description: 'Chaussure de tennis pour homme',

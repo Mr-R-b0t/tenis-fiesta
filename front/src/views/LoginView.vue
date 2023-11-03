@@ -7,8 +7,8 @@
          <div v-show="message" class="alert alert-danger">{{ message }}</div>
          <h4 class="mb-3">Login</h4>
           <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control mb-3" id="username" placeholder="Enter username" v-model="user.email">
+            <label for="email">Email</label>
+            <input type="text" class="form-control mb-3" id="email" placeholder="Enter email" v-model="user.email">
           </div>
           <div class="form-group">
             <label for="password">Password</label>

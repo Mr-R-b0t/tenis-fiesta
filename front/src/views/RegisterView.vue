@@ -49,12 +49,7 @@ export default {
         email: '',
         password: '',
         nickname: '',
-        confirmpassword: '',
-        adress: '',
-        city: '',
-        postalCode: '',
-        country: '',
-        phone: ''
+        confirmpassword: ''
       }
     }
   },

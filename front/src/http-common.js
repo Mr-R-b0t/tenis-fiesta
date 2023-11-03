@@ -1,5 +1,6 @@
 import axios from 'axios'
-export default axios.create({
+
+const http = axios.create({
   baseURL: 'http://localhost:8008/api',
   withCredentials: true,
   headers: {
@@ -7,3 +8,5 @@ export default axios.create({
     // Authorization: 'Bearer ' + localStorage.getItem('token')
   }
 })
+
+export default http

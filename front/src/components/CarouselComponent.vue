@@ -56,6 +56,7 @@ export default {
   margin-bottom: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow-x: hidden !important;
 }
 .carousel-caption{
     background-color: black;

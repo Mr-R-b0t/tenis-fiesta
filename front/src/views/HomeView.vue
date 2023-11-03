@@ -171,9 +171,10 @@ export default {
       const value = window.scrollY
       window.requestAnimationFrame(() => {
         this.ball.style.marginTop = value * -1.5 + 'px'
+        this.ball.style.marginLeft = value * 1.5 + 'px'
         this.raquette.style.marginLeft = value * -1.5 + 'px'
         this.sac.style.marginRight = value * -1.5 + 'px'
-        this.title.style.marginTop = value * 1.5 + 'px'
+        this.title.style.marginTop = value * -1.5 + 'px'
       })
     }
   }
@@ -214,7 +215,6 @@ header{
   margin: 0 10px;
   font-weight: 600;
   font-size: 1.5em;
-  animation: fade-down 0.5s;
 }
 
 .navigation .links:hover{
@@ -246,6 +246,7 @@ header{
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   pointer-events: none;
+  top: 55%;
 }
 
 #title:hover{
@@ -258,7 +259,7 @@ header{
 }
 #ball{
   width: 30%;
-  top: 6%;
+  top: 20%;
   left: 90%;
   transform: translateZ(-7px);
 }
@@ -279,7 +280,7 @@ header{
 #sac{
   width: 35%;
   right: -10%;
-  top: -40%;
+  top: -30%;
   transform: translateZ(-8px) scale(2);
 }
 .rest{
@@ -316,5 +317,10 @@ header{
 
 .title{
   text-align: center;
+}
+
+.best-sellers{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 </style>

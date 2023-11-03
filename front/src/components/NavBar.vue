@@ -17,20 +17,10 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/equipment" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Equipment</router-link>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Raquets</a></li>
-                            <li><a class="dropdown-item" href="#">Shock absorder</a></li>
-                            <li><a class="dropdown-item" href="#">Bags</a></li>
-                            <li><a class="dropdown-item" href="#">Tennis balls</a></li>
-
-                        </ul>
+                        <router-link to="/equipment" class="nav-link" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Equipment</router-link>
                     </li>
                     <li class="nav-item dropdown">
-                        <router-link to="/latest" class="nav-link dropdown-toggle" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Latest news</router-link>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Tournaments</a></li>
-                        </ul>
+                        <router-link to="/latest" class="nav-link" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Latest news</router-link>
                     </li>
                     <li class="nav-item dropdown">
                         <router-link to="/about" class="nav-link" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">About us</router-link>

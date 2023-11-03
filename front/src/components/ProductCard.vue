@@ -1,6 +1,6 @@
 <template>
-    <div class="Product">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="Product ">
+      <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
         <div class="col" v-for="card in data" :key="card.title">
           <div class="card">
             <img :src="card.image" class="card-img-top" :alt="card.title">

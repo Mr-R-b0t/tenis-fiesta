@@ -1,9 +1,12 @@
 <template>
     <section>
-      <h2>{{ header }}</h2>
+      <h2 class="text-center">{{ header }}</h2>
+      <br>
       <div class="cards">
         <ProductCard :data="items" />
       </div>
+      <hr>
+      <br>
     </section>
 </template>
 <script>

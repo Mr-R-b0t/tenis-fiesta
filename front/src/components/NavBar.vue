@@ -53,11 +53,11 @@
                     <li class="nav-item">
                         <router-link to="/login" class="nav-link">Login</router-link>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <router-link to="/register" class="nav-link">Register</router-link>
-                    </li>
-                        <li class="nav-item "><span class="nav-link" @click="logout" style="cursor:pointer">Logout</span>
-                    </li>
+                    </li> -->
+                        <!-- <li class="nav-item "><span class="nav-link" @click="logout" style="cursor:pointer">Logout</span>
+                    </li> -->
                     <form class="nav-item d-flex w-50" role="search">
                         <input class="form-control me-2" type="search" placeholder="Write here.." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>

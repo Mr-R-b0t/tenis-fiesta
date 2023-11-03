@@ -1,11 +1,11 @@
 <template>
-<div class="collection">
-    <div class="header d-flex align-items-center">
-         <h1>This is the collections page</h1>
+<div class="collection ">
+    <div class="header d-flex align-items-center ">
       </div>
       <div class="sections">
         <SectionComponent :header="'Raquets'" :items="raquets" />
         <SectionComponent :header="'Shock Absorber'" :items="shock" />
+        <SectionComponent :header="'Balls'" :items="balls" />
     </div>
 </div>
 </template>
@@ -40,17 +40,34 @@ export default {
         {
           title: 'Raquette Jaune',
           description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
-          image: require('../assets/equipement/raquets/raquette_jaune.png')
+          image: require('../assets/equipement/shock_absorber/lot_shock_absorber_emoji.jpg')
         },
         {
           title: 'Raquette Jaune',
           description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
-          image: require('../assets/equipement/raquets/raquette_noir.jpg')
+          image: require('../assets/equipement/shock_absorber/lot_shock_absorber48.jpg')
         },
         {
           title: 'Raquette Jaune',
           description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
-          image: require('../assets/equipement/raquets/raquettes_rose.png')
+          image: require('../assets/equipement/shock_absorber/lot_shock_absorber70.jpg')
+        }
+      ],
+      balls: [
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/balls/lot_balles_premium.jpg')
+        },
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/balls/lot_balles_team.jpg')
+        },
+        {
+          title: 'Raquette Jaune',
+          description: 'Rquette jaune de tout les poids, pour Homme, Femme Enfant',
+          image: require('../assets/equipement/balls/lot_balles_technifibre.jpg')
         }
       ]
     }
@@ -62,8 +79,8 @@ export default {
   .collection{
     position: relative;
     top:0px;
-  }
-  .header{
-    height: 50vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
   }
   </style>

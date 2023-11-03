@@ -252,8 +252,8 @@ header{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 300px;  /* Adjust this value to increase or decrease the height of the gradient */
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* This assumes the background color of .rest is white. Adjust rgba values if the background is different. */
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
   z-index: 2;
 }
 #title{

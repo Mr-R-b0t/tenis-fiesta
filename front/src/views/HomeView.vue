@@ -122,17 +122,8 @@
         <br><br><br>
         <h2 class="title">Best sellers: <i>SHOES</i></h2>
         <br>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="../assets/collections/shoes/chaussure_tennis_bleuvert.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
+          <ProductCard :data="bestSellers" />
+          <!-- <div class="col">
             <div class="card">
               <img src="../assets/collections/shoes/chaussure_tennis_bleuvert.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -157,16 +148,47 @@
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
       </div>
       </section>
   </Transition>
   </body>
 </template>
 <script>
+import ProductCard from '@/components/ProductCard.vue'
 export default {
+  name: 'HomeView',
+  components: {
+    ProductCard
+  },
+  data () {
+    return {
+      bestSellers: [
+        {
+          title: 'Chaussure de tennis',
+          description: 'Chaussure de tennis pour homme',
+          image: require('../assets/collections/shoes/chaussure_tennis_bleuvert.png')
+        },
+        {
+          title: 'Chaussure de tennis',
+          description: 'Chaussure de tennis pour femme',
+          image: require('../assets/collections/shoes/chaussure_tennis_bleuvert.png')
+        },
+        {
+          title: 'Chaussure de tennis',
+          description: 'Chaussure de tennis pour enfant',
+          image: require('../assets/collections/shoes/chaussure_tennis_enfant.jpg')
+        },
+        {
+          title: 'Chaussure de tennis',
+          description: 'Chaussure de tennis pour homme',
+          image: require('../assets/collections/shoes/chaussure_tennis_rouge.png')
+        }
+      ]
+    }
+  },
   mounted () {
     this.addScrollEfect()
   },

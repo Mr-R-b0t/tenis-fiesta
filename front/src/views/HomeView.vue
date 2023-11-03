@@ -90,7 +90,7 @@
         <div class="best-sellers">
           <h2 class="title">Best sellers: <i>SHOES</i></h2>
           <br>
-            <ProductCard :data="bestSellers" />
+          <router-link to="/collections" class="links nav-link"><ProductCard :data="bestSellers" /></router-link>
         </div>
       </div>
       </section>

@@ -22,27 +22,6 @@
           <input type="password" class="form-control mb-3" id="password_validation" placeholder="Re-enter password"
             v-model="user.confirmpassword">
         </div>
-        <div class="form-group">
-          <label for="adress">Adress</label>
-          <input type="text" class="form-control mb-3" id="adress" placeholder="Enter adress" v-model="user.adress">
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <input type="text" class="form-control mb-3" id="city" placeholder="Enter city" v-model="user.city">
-        </div>
-        <div class="form-group">
-          <label for="postalCode">Postal Code</label>
-          <input type="text" class="form-control mb-3" id="postalCode" placeholder="Enter postal code"
-            v-model="user.postalCode">
-        </div>
-        <div class="form-group">
-          <label for="country">Country</label>
-          <input type="text" class="form-control mb-3" id="country" placeholder="Enter country" v-model="user.country">
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="text" class="form-control mb-3" id="phone" placeholder="Enter phone" v-model="user.phone">
-        </div>
         <button class="w-100 btn btn-secondary btn-lg mt-3" type="button" @click="saveUser">Save </button>
         <hr class="my-4">
       </div>

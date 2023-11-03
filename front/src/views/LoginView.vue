@@ -51,7 +51,7 @@ export default {
         .then(response => {
           console.log(response.data)
           // localStorage.setItem('token', response.data.token)
-          this.$store.dispatch('user', response.data.user)
+          // this.$store.dispatch('user', response.data.user)
           this.$router.push({ name: 'home' })
         })
         .catch(error => {

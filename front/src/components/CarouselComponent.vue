@@ -20,7 +20,7 @@
           :class="{ active: index === 0 }"
           :data-bs-interval="slide.interval"
         >
-          <img :src="slide.image" class="d-block w-50 mx-auto" :alt="slide.title">
+          <img :src="slide.image" class="d-block w-50 mx-auto img" :alt="slide.title">
           <div class="carousel-caption d-none d-md-block w-50 mx-auto">
             <h5>{{ slide.title }}</h5>
             <p>{{ slide.description }}</p>
@@ -60,5 +60,8 @@ export default {
 }
 .carousel-caption{
     background-color: black;
-  }
+}
+.img{
+    border-radius: 20px;
+}
 </style>

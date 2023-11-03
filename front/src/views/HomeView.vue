@@ -1,14 +1,15 @@
 <template>
   <body>
     <header>
-      <Transition name="slide-down" appear>
         <nav class="navigation">
           <ul class="nav justify-content-center">
             <li class="nav-item ">
-              <router-link to="/" class="nav-link links">Home</router-link>
+            <router-link to="/" class="nav-link links">Home</router-link>
             </li>
             <li class="nav-item">
+              <Transition name="fade" mode="out-in">
               <router-link to="/collections" class="links nav-link">Collections</router-link>
+              </Transition>
             </li>
             <li class="nav-item">
               <router-link to="/equipment" class="links nav-link">Equipment</router-link>
@@ -27,7 +28,6 @@
             </li>
           </ul>
         </nav>
-      </Transition>
     </header>
     <section class="parallax">
       <img src="../assets/court.jpeg" alt="court de tennis" id="court">

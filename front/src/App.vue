@@ -1,12 +1,16 @@
 <template>
   <div id="app">
     <template v-if="isHomeView">
+      <Transition name="slide-fade" mode="out-in">
       <HomeView />
+      </Transition>
       <FooterComponent/>
     </template>
     <template v-else>
       <NavBar />
+      <Transition name="slide-fade" mode="out-in">
       <router-view />
+      </Transition>
       <FooterComponent/>
     </template>
   </div>
@@ -37,5 +41,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #353535;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 1.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(30px);
+  opacity: 0;
 }
 </style>

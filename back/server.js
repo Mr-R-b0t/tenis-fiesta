@@ -5,29 +5,39 @@ const app = express();
 const cookieParser = require("cookie-parser");
 
 const corsOption = {
-  credentials: true, //authetication cookies
+  credentials: true, // Authentication cookies
   origin: "http://localhost:8080",
 };
 
 app.use(cookieParser());
 app.use(cors(corsOption));
 
-//models
+// Models
 const db = require("./app/models");
-db.connex.sync();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/api", (req, res) => {
-  res.json({ message: "welcome" });
+/**
+ * Root route to display a welcome message.
+ *
+ * @param {import('express').Request} req - The Express request object.
+ * @param {import('express').Response} res - The Express response object.
+ */
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome" });
 });
-//router
-require("./app/routes/product.routes")
-require("./app/routes/users.routes")
-require("./app/routes/checkout.routes")
-require("./app/routes/wishlist.routes")
+
+// Router setup
+require("./app/routes/product.route")(app);
+require("./app/routes/user.route")(app);
+require("./app/routes/checkout.route")(app);
+
 const PORT = 8008;
+
+/**
+ * Start the Express server.
+ */
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
